@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_todo_list/Views/Dashboard.dart';
 
 void main() {
   runApp(new MyApp());
@@ -16,11 +17,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('My AppBar'),
-        ),
         body: Center(
-          child: Text('Hello, World!'),
+          child: DashboardView(),
         ),
       ),
     );
